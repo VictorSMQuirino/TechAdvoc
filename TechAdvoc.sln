@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Persistence\Infrastructure\Infrastructure.csproj", "{BFC89EB0-1045-424B-AC4D-0B29E314C8E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Core\Application\Application.csproj", "{66BA6B84-2343-47F6-95C5-138E6EBBE16A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,18 @@ Global
 		{BFC89EB0-1045-424B-AC4D-0B29E314C8E3}.Release|x64.Build.0 = Release|Any CPU
 		{BFC89EB0-1045-424B-AC4D-0B29E314C8E3}.Release|x86.ActiveCfg = Release|Any CPU
 		{BFC89EB0-1045-424B-AC4D-0B29E314C8E3}.Release|x86.Build.0 = Release|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Debug|x64.Build.0 = Debug|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Debug|x86.Build.0 = Debug|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Release|x64.ActiveCfg = Release|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Release|x64.Build.0 = Release|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Release|x86.ActiveCfg = Release|Any CPU
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +66,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4AAB637E-89F5-45A1-9B3D-55D8B962BE55} = {9D60BF15-4E0E-4B01-B488-FFD58BF3D796}
 		{BFC89EB0-1045-424B-AC4D-0B29E314C8E3} = {FD44DE43-F811-43CD-A1D3-C31411CC2EE8}
+		{66BA6B84-2343-47F6-95C5-138E6EBBE16A} = {9D60BF15-4E0E-4B01-B488-FFD58BF3D796}
 	EndGlobalSection
 EndGlobal

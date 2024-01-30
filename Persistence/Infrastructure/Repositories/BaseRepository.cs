@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using TechAdvoc.Domain.Common;
 using TechAdvoc.Domain.Interfaces;
 
@@ -13,26 +14,29 @@ public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     
     public void Create(T entity)
     {
-        throw new NotImplementedException();
+        _context.Add(entity);
+        _context.SaveChanges();
     }
 
     public void Delete(T entity)
     {
-        throw new NotImplementedException();
+        _context.Remove(entity);
+        _context.SaveChanges();
     }
 
-    public Task<T> Get(int id, CancellationToken cancellationToken)
+    public async Task<T> Get(int id, CancellationToken cancellationToken)
     {
         throw new NotImplementedException();
     }
 
-    public Task<List<T>> GetAll(CancellationToken cancellationToken)
+    public async Task<List<T>> GetAll(CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        return await _context.Set<T>().ToListAsync(cancellationToken);
     }
 
     public void Update(T entity)
     {
-        throw new NotImplementedException();
+        _context.Update(entity);
+        _context.SaveChanges();
     }
 }
